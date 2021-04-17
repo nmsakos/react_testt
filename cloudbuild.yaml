@@ -1,0 +1,5 @@
+steps:
+- name: 'npm'
+  args: ['install']
+- name: 'npm'
+  args: ['run', 'build']
