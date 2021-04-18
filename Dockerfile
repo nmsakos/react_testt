@@ -4,6 +4,8 @@ ENV NODE_ENV=production
 WORKDIR /app
 
 RUN mkdir node_modules
+RUN mkdir build
+RUN chown -R node:node .
 
 COPY --chown=node:node ["package*.json", "./"]
 
